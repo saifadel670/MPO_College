@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="studentBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classproject.StudentFXMLController">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar layoutY="173.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="173.0">
+               <menus>
+                  <Menu mnemonicParsing="false" onAction="#homeButtonOnClick" text="Home" />
+                  <Menu mnemonicParsing="false" text="Course">
+                     <items>
+                        <Menu mnemonicParsing="false" onAction="#courseResultButtonOnClick" text="Courses result " />
+                        <Menu mnemonicParsing="false" onAction="#courseSupplementButtonOnClick" text="Courses Suppliment" />
+                     </items></Menu>
+                  <Menu mnemonicParsing="false" text="View">
+                     <items>
+                        <Menu mnemonicParsing="false" onAction="#noticeButtonOnClick" text="Notice " />
+                        <Menu mnemonicParsing="false" onAction="#transcriptButtonOnClick" text="Transcript " />
+                        <Menu mnemonicParsing="false" onAction="#scholarshipButtonOnClick" text="Scholarship" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Label layoutX="738.0" layoutY="14.0" text="Login as Student" textFill="#1c2ae2" AnchorPane.rightAnchor="14.000000000000043">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="userNameLabel" layoutX="771.0" layoutY="33.0" text="User : Ashraful Islam" textFill="#1c2ae2" AnchorPane.rightAnchor="14.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="88.0" text="College Registrars Office Automation System">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="127.0" text="Ali Kadam Degree College">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="752.0" layoutY="76.0" mnemonicParsing="false" onAction="#changepasswordButtonOnClick" text="Change Password" />
+            <Button layoutX="782.0" layoutY="113.0" mnemonicParsing="false" onAction="#logoutButtonOnClick" text="Logout" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,4 @@
+Teacher
+class cancell
+Student,
+sorry.class is cancelled for today. 

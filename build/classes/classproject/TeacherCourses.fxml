@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classproject.TeacherCoursesController">
+   <children>
+      <Label layoutX="179.0" layoutY="43.0" text="Course Name :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="120.0" text="Time :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="173.0" text="Day :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="courseNameTextField" layoutX="300.0" layoutY="41.0" />
+      <TextField fx:id="TimeTextField" layoutX="297.0" layoutY="117.0" />
+      <TextField fx:id="dayField" layoutX="300.0" layoutY="170.0" />
+      <Button layoutX="498.0" layoutY="350.0" mnemonicParsing="false" onAction="#submitButtonOnClick" text="Submit" />
+      <TableView fx:id="teacherTableView" layoutX="14.0" layoutY="15.0" prefHeight="360.0" prefWidth="122.0">
+        <columns>
+          <TableColumn fx:id="teachernameColumn" prefWidth="121.0" text="Teacher Name" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="studentIDTextArea" layoutX="295.0" layoutY="209.0" prefHeight="141.0" prefWidth="160.0" />
+      <Label layoutX="180.0" layoutY="239.0" text="STUDENT  ID: ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" layoutX="332.0" layoutY="26.0" />
+      <Label layoutX="194.0" layoutY="75.0" prefHeight="17.0" prefWidth="67.0" text="Credit:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="creditField" layoutX="301.0" layoutY="73.0" prefHeight="25.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>

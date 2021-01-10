@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="421.0" layoutY="65.0" text="Course Name :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="courseNameLabel" layoutX="551.0" layoutY="65.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="304.0" layoutY="207.0" prefHeight="313.0" prefWidth="566.0">
+         <columns>
+            <TableColumn fx:id="studentNameTableColoumn" prefWidth="286.40006256103516" text="Student Name" />
+            <TableColumn fx:id="idTableColoumn" prefWidth="154.39996337890625" text="ID" />
+            <TableColumn fx:id="gradeTableColoumn" prefWidth="124.80001831054688" text="Grade" />
+         </columns>
+      </TableView>
+      <TableView fx:id="courseNameTableView" layoutX="14.0" layoutY="78.0" prefHeight="483.0" prefWidth="274.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="78.0">
+         <columns>
+            <TableColumn fx:id="courseNameColoumn" prefWidth="286.40006256103516" text="Course Name" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

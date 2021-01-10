@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="accountOfficerBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classproject.AccountOfficerFXMLController">
+   <top>
+      <AnchorPane fx:id="accountOfficerAnchorPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar layoutY="173.0" onDragDetected="#homeButtonOnClick" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="173.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Home" />
+                  <Menu mnemonicParsing="false" text="Fund ">
+                     <items>
+                        <Menu mnemonicParsing="false" onAction="#currentAmountButtonOnClick" text="Current Amount " />
+                        <Menu mnemonicParsing="false" text="Add Money">
+                           <items>
+                              <Menu mnemonicParsing="false" onAction="#cashButtonOnClick" text="Cash" />
+                              <Menu mnemonicParsing="false" onAction="#dipositeButtonOnClick" text="Deposited" />
+                           </items></Menu>
+                        <Menu mnemonicParsing="false" onAction="#useMoneyButtonOnClick" text="Use Money " />
+                        <Menu mnemonicParsing="false" onAction="#previousRecordButtonOnClick" text="Previous Record" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Attandance">
+                     <items>
+                        <Menu mnemonicParsing="false" onAction="#selfAttandanceOnclick" text="Self Attandace" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="View">
+                     <items>
+                        <Menu mnemonicParsing="false" onAction="#salaryButtonOnClick" text="Salary " />
+                        <Menu mnemonicParsing="false" onAction="#noticebuttonOnClick" text="Notice" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <Label fx:id="loginAccountOfficer" layoutX="738.0" layoutY="14.0" text="Login as Account Officer" textFill="#1c2ae2" AnchorPane.rightAnchor="14.000000000000043">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="88.0" text="College Registrars Office Automation System">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="127.0" text="Ali Kadam Degree College">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="775.0" layoutY="56.0" mnemonicParsing="false" onAction="#changePasswordButtonOnClick" text="Change Password" />
+            <Button layoutX="830.0" layoutY="89.0" mnemonicParsing="false" onAction="#logoutButtonOnClick" text="Logout" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

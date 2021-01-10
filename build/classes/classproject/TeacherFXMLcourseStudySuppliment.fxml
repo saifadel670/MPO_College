@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="186.0" layoutY="227.0" mnemonicParsing="false" onAction="#sendButtonOnClick" text="Send" AnchorPane.leftAnchor="186.0" />
+      <Label layoutX="173.0" layoutY="105.0" text="Select Course :" AnchorPane.leftAnchor="173.0" />
+      <TextField fx:id="fileTextField" layoutX="195.0" layoutY="180.0" AnchorPane.leftAnchor="195.0" />
+      <Label layoutX="173.0" layoutY="57.0" text="Send Study Suppliment">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="88.0" layoutY="180.0" mnemonicParsing="false" onAction="#fileChooseButtonOnClick" prefHeight="25.0" prefWidth="95.0" text="File Choose" />
+      <ComboBox fx:id="sectionComboBox" layoutX="176.0" layoutY="135.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

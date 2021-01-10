@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="456.0" layoutY="167.0" text="Select Year">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="456.0" layoutY="210.0" text="Select Month">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="attandanceReportTextLavel" layoutX="437.0" layoutY="338.0" text="Dipok Saha total attandance in July 2019 is 15">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="selectYearComboBox" layoutX="587.0" layoutY="165.0" prefWidth="150.0" />
+      <ComboBox fx:id="selectMonthComboBox" layoutX="587.0" layoutY="207.0" prefWidth="150.0" />
+      <TableView fx:id="tableView" layoutX="90.0" layoutY="138.0" prefHeight="357.0" prefWidth="242.0" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="138.0">
+        <columns>
+          <TableColumn fx:id="officerNameColoumn" prefWidth="241.6000061273575" text="Officer Name" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
